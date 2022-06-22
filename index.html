@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html id="htmlforscroll" class="htmlforscroll">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+        <title>
+            TODO list
+        </title>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+    </head>
+    <body id="htmlforscroll" class="htmlforscroll">
+        <div class="container_class" id="container_id">
+            <div class="tabs_class" id="tabs_id">
+                <div class="tab_1_class" id="tab_1_id"><input type="image" src="checklist.png" class="checklist_img_class" id="checklist_img_id" onclick="openForm1()" > </div>
+                <div class="tab_2_class" id="tab_2_id"><input type="image" src="completed.png" class="checklist_img_class" id="completed_img_id" onclick="openForm2()"></div>
+            </div>
+            <div class="content_class_1" id="content_id_1">content1</div>
+            <div class="content_class_1" id="content_id_2">content2</div>
+        <div class="submit_button_class" class="submit_button_id"></div>
+        </div>
+    <div class="plus_img_class_div"><input type="image" src="plus2.png" class="plus_img_class" id ="plus_img_id"></div>
+    <div class="enter_task_class" id="enter_task_id"><input type="text" class="enter_text_class" id="enter_text_id"></div>
+
+
+
+    <script src="index.js">
+
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $("#task").remove()
+        //     })
+        // })
+
+    // var outputArea=document.getElementById('content')
+
+    // $('#user_form_task').on('submit',function(e){
+    //     e.preventDefault();
+    //     var message=$('#todo_name_id').val();
+        
+    //     outputArea.append(`
+    //     <div class='Task'>
+    //         ${message}
+    //     </div>`);
+    // }); 
+    </script>
+
+    </body>
+
+</html>
+
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="top_div"><header class="todolist">TODO List</header></div>
+        <hr>
+        <div class="input_div">
+        <form id="user_form_task">
+            <label class="todo_ET">Enter Task</label><br>
+            <input size="120px" type="text" id="todo_name_id" class="todo_name_id" autocomplete="off"  placeholder="Describe your task"><br>
+        </form>
+        </div>
+        <div class="header_buttons"><button class="add_item_to_list" form="user_form_task">Add item</button>
+            <button class="remove_all_items" id ="remove_all_items">Remove all Tasks</button></div>
+        <div class="new_task">New Tasks</div>
+        <div id="content_id" class="content">
+            <div class='taskclass' id ="task">
+
+                <div class="messagecon">hello sdhello sdas dasd as kldasdhkl askdhl ashkld hklasas dasd as kldasdhkl askdhl ashkld hklas hello sdas dasd as kldasdhkl askdhl ashkld hklashello sdas dasd as kldasdhkl askdhl ashkld hklas</div>
+                
+                    <div class ="deletebtn">
+                    <button class="deletetask" id="deletetask">Delete Task</button>
+                    
+                    <button class="completed_btn" id="completed_btn">Task Completed</button></div>  
+                    
+                        
+                </div>
+            <div class="taskclass" id = "task">hello  world<button class="deletetask" id="deletetask">Delete</button></div>
+                
+        </div>
+        <div class="task_complete" id="completed_task">Completed Tasks</div>
+        <div id="content_id_completed" class="content"></div>
+        
