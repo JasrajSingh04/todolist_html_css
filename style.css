@@ -106,16 +106,28 @@ body{
 }
 
 .enter_task_class{
-    margin-left: 870px;
-    margin-top: 80px;
+    margin-left: 780px;
+    margin-top: 70px;
     width: 10%;
-   
-    background-color: red;
+    border-radius: 10px;
+    
 }
 
 .enter_text_class{
-
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    width: 350px;
+    border-radius: 10px;
+    border-color: white;
+    background-color:rgb(202, 202, 202);
 }
+
+.enter_text_class:focus{
+    border-color: green;
+    
+}
+
 
 
 
