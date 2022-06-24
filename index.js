@@ -156,7 +156,7 @@ openForm1();
 
 // });
 
-console.log("hello")
+// console.log("hello")
 
 
 // var t=document.getElementById("plus_img_id");
@@ -185,7 +185,7 @@ console.log("hello")
 t=document.getElementById("plus_img_id")
  t.addEventListener("click",function(e){
   e.preventDefault();
-    var message=$('#enter_text_id').val();
+    // var message=$('#enter_text_id').val();
 
 // checkbox_class
 checkbox_input=document.createElement("input");
@@ -197,8 +197,10 @@ checkbox_input.val="yes";
 checkbox_input.onclick=function(e){
   h2.style.textDecorationLine="line-through";
   h2.style.color="rgb(226, 226, 226)";
-  
-  document.getElementById("content_id_2").appendChild(div)
+  document.getElementById("content_id_2").appendChild(div);
+  openForm2();
+  h2.disabled="disabled";
+  h2.backgroundColor="white"
 }
 
 
@@ -232,6 +234,16 @@ checkbox.appendChild(checkbox_input)
   h2.type="text"
   h2.id="p"
   h2.className="p"
+  h2.addEventListener("keypress",function(e){
+    if(e.key=="Enter"){
+      
+      h2.disabled="disabled";
+      h2.style.backgroundColor="white";
+      h2.style.color="black";
+    }
+  
+  
+  })
 
 
   var message_task=document.createElement("div")
@@ -277,6 +289,7 @@ checkbox.appendChild(checkbox_input)
 
     document.getElementById("content_id_1").appendChild(div);
     h2.focus();
+    openForm1();
     
           })
 
