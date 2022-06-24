@@ -21,7 +21,7 @@
 
 function openForm1() {
     document.getElementById("content_id_2").style.display = "none";
-    document.getElementById("tab_2_id").style.backgroundColor = "rgb(202, 202, 202)";
+    document.getElementById("tab_2_id").style.backgroundColor = "rgb(245, 245, 245)";
 
 
     document.getElementById("content_id_1").style.display = "block";
@@ -33,14 +33,431 @@ function openForm1() {
     document.getElementById("tab_2_id").style.backgroundColor = "white";
 
     document.getElementById("content_id_2").style.display = "block";
-    document.getElementById("tab_1_id").style.backgroundColor = " rgb(202, 202, 202)";
+    document.getElementById("tab_1_id").style.backgroundColor = "rgb(245, 245, 245)";
   }
 
 openForm1();
 
 
+// var sum=0
+// var scroll_down=document.getElementsByClassName("content_class_1")
+
+// const myForm=document.getElementById("user_form_submit");
+// myForm.addEventListener("submit",(e)=>{
+  
+//     e.preventDefault();
+//     var message=$('#enter_text_id').val();
+
+// // checkbox_class
+// checkbox_input=document.createElement("input");
+// checkbox_input.type="radio";
+// checkbox_input.className="radio_btn";
+// checkbox_input.id="radio_id";
+// checkbox_input.checked==true;
+// checkbox_input.val="yes";
+// checkbox_input.onclick=function(e){
+//   h2.style.textDecorationLine="line-through";
+//   h2.style.color="rgb(226, 226, 226)";
+  
+//   document.getElementById("content_id_2").appendChild(div)
+// }
 
 
+
+//                     //function(e){
+//   // if(checkbox_input.val=="yes"){
+//   //   checkbox_input.val="no"
+//   //   h2.style.textDecorationLine="line-through";
+//   //   h2.style.color="rgb(226, 226, 226)";
+//   // }
+//   // else if(checkbox_input.val=="no"){
+//   //   checkbox_input.val=="yes"
+//   //   h2.style.textDecorationLine="none";
+//   //   h2.style.color="black";
+//   // }
+  
+// //}
+
+
+
+
+// checkbox=document.createElement("div");
+// checkbox.id="checkbox_id";
+// checkbox.className="checkbox_class";
+// checkbox.appendChild(checkbox_input)
+
+
+
+//   //input div that is message
+//   var h2 = document.createElement("p")
+//   h2.innerHTML=message;
+
+
+//   var message_task=document.createElement("div")
+//   message_task.className="message_task";
+//   message_task.id="message_task_id";
+//   message_task.appendChild(h2)
+ 
+
+
+//   //deleting task
+//   var bin_id=document.createElement("input")
+//   bin_id.type="image";
+//   bin_id.src="bin_3.png";
+//   bin_id.className="bin_class";
+//   bin_id.id="bin_id";
+//   bin_id.height=48;
+//   bin_id.width=48;
+//   bin_id.onclick = function(e){        
+//             e.target.parentNode.parentNode.remove();    
+//             }
+
+//   var delete_task=document.createElement("div")
+//   delete_task.className="deletetask_class";
+//   delete_task.id="deletetask_id";
+//   delete_task.appendChild(bin_id);
+
+
+ 
+
+
+
+
+
+
+
+//     // main div for user_task
+//     var div = document.createElement("div")
+//     div.className="user_task";
+//     div.id="user_task_id";
+//     div.appendChild(checkbox);
+//     div.appendChild(message_task);
+//     div.appendChild(delete_task);
+   
+    
+    
+
+
+//     if (message==""){
+//               return
+//           }
+//           else{
+//               document.getElementById("content_id_1").appendChild(div);
+//           }
+          
+//           myForm.reset();
+//           scroll_down[0].scrollTop = 9e9;
+         
+          
+    
+
+//     myForm.reset();
+    
+
+// });
+
+console.log("hello")
+
+
+// var t=document.getElementById("plus_img_id");
+//         t.addEventListener("click",function(){
+//             console.log("submitted")
+//         if(t.value=="YES"){
+//           document.getElementById("enter_task_id").classList.add("open_task");
+//             t.value="NO";
+//           }
+//         else if(t.value=="NO"){
+//             document.getElementById("enter_task_id").classList.remove("open_task");
+//             t.value="YES";
+//           } 
+//         })
+
+
+//-------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+t=document.getElementById("plus_img_id")
+ t.addEventListener("click",function(e){
+  e.preventDefault();
+    var message=$('#enter_text_id').val();
+
+// checkbox_class
+checkbox_input=document.createElement("input");
+checkbox_input.type="radio";
+checkbox_input.className="radio_btn";
+checkbox_input.id="radio_id";
+checkbox_input.checked==true;
+checkbox_input.val="yes";
+checkbox_input.onclick=function(e){
+  h2.style.textDecorationLine="line-through";
+  h2.style.color="rgb(226, 226, 226)";
+  
+  document.getElementById("content_id_2").appendChild(div)
+}
+
+
+
+                    //function(e){
+  // if(checkbox_input.val=="yes"){
+  //   checkbox_input.val="no"
+  //   h2.style.textDecorationLine="line-through";
+  //   h2.style.color="rgb(226, 226, 226)";
+  // }
+  // else if(checkbox_input.val=="no"){
+  //   checkbox_input.val=="yes"
+  //   h2.style.textDecorationLine="none";
+  //   h2.style.color="black";
+  // }
+  
+//}
+
+
+
+
+checkbox=document.createElement("div");
+checkbox.id="checkbox_id";
+checkbox.className="checkbox_class";
+checkbox.appendChild(checkbox_input)
+
+
+
+  //input div that is message
+  var h2 = document.createElement("input");
+  h2.type="text"
+  h2.id="p"
+  h2.className="p"
+
+
+  var message_task=document.createElement("div")
+  message_task.className="message_task";
+  message_task.id="message_task_id";
+  message_task.appendChild(h2)
+ 
+
+
+  //deleting task
+  var bin_id=document.createElement("input")
+  bin_id.type="image";
+  bin_id.src="bin_3.png";
+  bin_id.className="bin_class";
+  bin_id.id="bin_id";
+  bin_id.height=48;
+  bin_id.width=48;
+  bin_id.onclick = function(e){        
+            e.target.parentNode.parentNode.remove();    
+            }
+
+  var delete_task=document.createElement("div")
+  delete_task.className="deletetask_class";
+  delete_task.id="deletetask_id";
+  delete_task.appendChild(bin_id);
+
+
+ 
+
+
+
+
+
+
+
+    // main div for user_task
+    var div = document.createElement("div")
+    div.className="user_task";
+    div.id="user_task_id";
+    div.appendChild(checkbox);
+    div.appendChild(message_task);
+    div.appendChild(delete_task);
+
+    document.getElementById("content_id_1").appendChild(div);
+    h2.focus();
+    
+          })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+// // remove_all_items=document.getElementById("user_form_submit");
+// // // remove_all_items.addEventListener("submit",function(){
+// // //   t=document.getElementById("enter_text_class")
+// // //   if(t.value=="YES"){
+// // //     t.classList.add("open_task");
+// // //     t.value="NO";
+// // //   }
+// // //   else if(t.value=="NO"){
+// // //     t.classList.remove("open_task");
+// // //     t.value="YES";
+// // //   } 
+
+    
+// })
+
+
+
+// remove_all_items=document.getElementById("remove_all_items");
+// remove_all_items.addEventListener("click",function(){
+//     document.getElementById("content_id").removeChild(document.getElementById("Task"));
+// })
+
+
+
+
+// function remove_div(){
+//     document.getElementById("content").remove();
+// }
+
+// var m_con=document.getElementById("deletetask")
+// delete_div=document.getElementById("deletetask")
+//     delete_div.onclick=function(){
+//     m_con.parentNode.parentNode.remove();
+//     }
+
+
+   
+// $(document).ready(function(){
+//     $(document).on('click','.deletetask',function(){
+//         $(this).closest(`#taskclass`).remove()
+//     })
+
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+// button.onclick = function(e){
+//   //         // document.getElementById(id).remove();
+//   //         e.target.parentNode.remove();
+  
+//   //         }
 
 
 

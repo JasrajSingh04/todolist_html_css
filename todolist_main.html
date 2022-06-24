@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html id="htmlforscroll" class="htmlforscroll">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+        <title>
+            TODO list
+        </title>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+        <!-- <link rel="stylesheet" type="text/css" href="style.css">  -->
+    </head>
+    <body>
+        <button type="radio" id="plus_img_id">for adding div</button>
+        <div id="content">
+
+        </div>
+    </body>
+
+    <script>
+        var t=document.getElementById("plus_img_id");
+                t.addEventListener("click",function(){
+                    console.log("submitted")
+                input=document.createElement("input");
+                input.id="id1"
+                input.class="id2"
+                
+                document.getElementById("content").appendChild(input)
+                })
+    </script>
