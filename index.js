@@ -241,7 +241,12 @@ checkbox.appendChild(checkbox_input)
       h2.style.backgroundColor="white";
       h2.style.color="black";
     }
-  
+    h2.addEventListener("focusout",function(e){ 
+        h2.disabled="disabled";
+        h2.style.backgroundColor="white";
+        h2.style.color="black";
+    
+    })
   
   })
 
