@@ -235,6 +235,7 @@ checkbox.appendChild(checkbox_input)
   h2.id="p"
   h2.className="p"
   h2.addEventListener("keypress",function(e){
+
     if(e.key=="Enter"){
       
       h2.disabled="disabled";
